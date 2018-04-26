@@ -1,0 +1,38 @@
+:root{
+	--base-color : tomato;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-top: 70px;
+}
+
+main.maincontent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(3,1fr);
+	padding: 2vh;
+	grid-gap: 1vh;
+}
+
+div#getinput {
+	min-height: 80vh;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+div.loginform {
+	width: 80vh;
+	margin: 0 auto;
+	padding: 10vh;
+}
+
+div#logincontainer{
+	box-shadow: 5px 5px 5px 5px gray;
+	padding: 5vh;
+}
