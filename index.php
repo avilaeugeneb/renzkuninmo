@@ -3,7 +3,7 @@ require_once 'heading.php';
 ?>
 
 <!-- Start your project here-->
-<main class="maincontent">
+<main class="maincontent container">
 	<div class="card card-body">
 		<h4 class="card-title">Panel title</h4>
 		<p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>

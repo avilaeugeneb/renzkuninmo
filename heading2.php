@@ -40,17 +40,20 @@
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="session_page1.php">Page 1
+                </a>
+            </li>
         </ul>
         <!-- Links -->
-        <span class="navbar-text white-text">
-            Welcome, <span>User!</span>
-        </span>
 
         <form class="form-inline">
 
             <ul class="navbar-nav mr-auto">
-
-                <li><a class="nav-link" href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+                <span class="navbar-text white-text">
+                   Welcome, <span>User!</span>
+                </span>
+                <li><a class="nav-link" href="session_logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
             </ul>
         </form>
     </div>

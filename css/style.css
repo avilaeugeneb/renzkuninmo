@@ -14,16 +14,17 @@ body {
 main.maincontent {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: repeat(3,1fr);
-	padding: 2vh;
+	grid-template-rows: repeat(3,auto);
+	padding: 5vh;
 	grid-gap: 1vh;
 }
 
 div#getinput {
-	min-height: 80vh;
+	min-height: 60vh;
 	display: grid;
 	align-items: center;
 	justify-items: center;
+
 }
 
 div.loginform {
@@ -33,6 +34,10 @@ div.loginform {
 }
 
 div#logincontainer{
-	box-shadow: 5px 5px 5px 5px gray;
+	box-shadow: 5px 5px 5px 5px rgba(0, 128, 115,0.5);
 	padding: 5vh;
+}
+
+div#errormessage {
+	color: red;
 }

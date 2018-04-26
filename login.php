@@ -8,6 +8,7 @@ require_once 'heading.php';
 
 		<form action="session_home.php" method="POST">
 			<h2 class="text-center">Log In</h2>
+
 			<!-- Material input name -->
 			<div class="md-form form-sm">
 				<i class="fa fa-user prefix"></i>
@@ -23,9 +24,20 @@ require_once 'heading.php';
 			</div>
 
 			<div class="text-center mt-4 mb-2">
-				<button class="btn btn-primary" type="submit">Login
+				<button class="btn btn-teal" type="submit">Login
 					<i class="fa fa-send ml-2"></i>
 				</button>
+			</div>
+			<div class="text-center mt-4 mb-2" id="errormessage">
+				<p>
+					<?php 
+					if(isset($_SESSION['message']) && !empty($_SESSION['message'])){
+						echo $_SESSION['message'];
+						session_unset();
+						session_destroy();
+					}
+					?>
+				</p>
 			</div>
 		</form>
 	</div>

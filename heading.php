@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +23,7 @@
 <body>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark teal darken-2 fixed-top scrolling-navbar">
 
         <!-- Navbar brand -->
         <a class="navbar-brand" href="#">Huge Website</a>
@@ -40,13 +44,38 @@
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="session_page1.php">First Page
+                </a>
+            </li>
         </ul>
         <!-- Links -->
 
         <form class="form-inline">
             <ul class="navbar-nav mr-auto">
-                <li><a class="nav-link" href="#">Register</a></li>
-                <li><a class="nav-link" href="login.php">Login</a></li>
+                <?php 
+                if(isset($_SESSION['user'])){
+                    echo '<span class="navbar-text white-text">
+                    Welcome, <span>'. $_SESSION['user'] .'</span>
+                    </span>';
+                }
+                else {
+                    echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>';
+                }
+                ?>
+
+                <?php 
+                if(isset($_SESSION['user'])){
+                    echo '<li class="nav-item"><a class="nav-link" href="session_logout.php">Logout</a></li>';
+                }
+                else {
+                    echo '<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>';
+                }
+
+
+
+                ?>
+                
             </ul>
         </form>
     </div>

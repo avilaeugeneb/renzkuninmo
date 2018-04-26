@@ -1,8 +1,7 @@
 	
 
-
 <!--Footer-->
-<footer class="page-footer font-small blue pt-4 mt-4">
+<footer class="page-footer font-small teal darken-2 pt-4 mt-4 fixed-bottom">
 
 	<!--Footer Links-->
 	<div class="container-fluid text-center text-md-left">
@@ -10,8 +9,8 @@
 
 			<!--First column-->
 			<div class="col-md-6">
-				<h5 class="text-uppercase">Footer Content</h5>
-				<p>Here you can use rows and columns here to organize your footer content.</p>
+				<h5 class="text-uppercase">Address</h5>
+				<p></p>
 			</div>
 			<!--/.First column-->
 

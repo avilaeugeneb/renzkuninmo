@@ -4,17 +4,18 @@ require_once 'heading.php';
 
 
 <div id="getinput">
-	<?php 
-		session_start();
+	<?php
 		$username = htmlspecialchars($_POST['username']);
 		$password = htmlspecialchars($_POST['password']);
 
 		if(authenticate($username,$password)){
 			echo 'User is valid';
 			$_SESSION['user'] = $username;
+			header('Location: session_page1.php');
 		}
 		else{
-			echo 'Incorrect login details.';
+			$_SESSION['message'] = 'Please enter valid user/password';
+			header('Location: login.php');
 		}
 
 		function authenticate($username,$password){
