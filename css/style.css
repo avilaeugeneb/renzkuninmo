@@ -11,12 +11,13 @@ body {
 	margin-top: 70px;
 }
 
-main.maincontent {
+div.maincontent {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: repeat(3,auto);
 	padding: 5vh;
 	grid-gap: 1vh;
+	min-height: 80vh;
 }
 
 div#getinput {

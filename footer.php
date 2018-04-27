@@ -1,7 +1,7 @@
 	
 
 <!--Footer-->
-<footer class="page-footer font-small teal darken-2 pt-4 mt-4 fixed-bottom">
+<footer class="page-footer font-small teal darken-2 pt-4 mt-4">
 
 	<!--Footer Links-->
 	<div class="container-fluid text-center text-md-left">
@@ -56,6 +56,8 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- custom JavaScript -->
+<script src="js/script.js"></script>
 </body>
 
 </html>

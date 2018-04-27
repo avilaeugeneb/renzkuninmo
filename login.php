@@ -7,24 +7,24 @@ require_once 'heading.php';
 	<div class="container" id="logincontainer">
 
 		<form action="session_home.php" method="POST">
-			<h2 class="text-center">Log In</h2>
+			<p class="h4 text-center mb-4">Log In</p>
 
 			<!-- Material input name -->
 			<div class="md-form form-sm">
-				<i class="fa fa-user prefix"></i>
+				<i class="fa fa-user prefix teal-text"></i>
 				<input type="text" id="username" class="form-control form-control-sm" name="username">
 				<label for="username">Username</label>
 			</div>
 
 			<!-- Material input subject -->
 			<div class="md-form form-sm">
-				<i class="fa fa-tag prefix"></i>
+				<i class="fa fa-tag prefix teal-text"></i>
 				<input type="password" id="password" class="form-control form-control-sm" name="password">
 				<label for="password">Password</label>
 			</div>
 
 			<div class="text-center mt-4 mb-2">
-				<button class="btn btn-teal" type="submit">Login
+				<button class="btn btn-teal" type="submit" id="myloginbtn" name="submit">Login
 					<i class="fa fa-send ml-2"></i>
 				</button>
 			</div>
